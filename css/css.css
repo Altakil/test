@@ -1,0 +1,392 @@
+*
+{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+html 
+{
+  margin:0;
+  padding:0;
+  background-color:#e5e5e5;
+}
+
+.clear
+{
+  clear:both;
+}
+
+#container
+{
+  background:linear-gradient(#f2f2f2, #cecece);
+  background:-webkit-linear-gradient(#f2f2f2, #cecece);
+  width:768px;
+  margin:0 auto;
+  padding:0 0 10px 0;
+}
+
+#texture 
+{
+    background-image:url(../images/texture.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	overflow:hidden;
+}
+
+#content 
+{
+  	padding:10px 20px;
+}
+
+#content h1
+{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:16pt;
+  font-weight:normal;
+  color:#58595b;
+  margin:20px 0 0 20px;
+}
+
+#content hr
+{
+  margin:20px 0 0 0;
+}
+
+#content p
+{
+  padding:0 20px;
+  margin:20px 0 0 0;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:8.55pt;
+  color:#58595b;
+  line-height:1.4;
+}
+
+#drawBar, #drawBar1, #drawBar2
+{
+  background:linear-gradient(#fff, #e8eaea);
+  box-shadow:0 0 10px rgba(0,0,0,0.5), inset 0 0 1px rgba(0,0,0,0.5), inset 0 0 1px rgba(0,15,255,0.5);
+  -webkit-background:linear-gradient(#fff, #e8eaea);
+  -webkit-box-shadow:0 0 10px rgba(0,0,0,0.5), inset 0 0 1px rgba(0,0,0,0.5), inset 0 0 1px rgba(0,15,255,0.5);
+  width:300px;
+  height:52px;
+  cursor:pointer;
+  float:right;
+  overflow:hidden;
+  margin:20px 10px 50px 0;
+  position:relative
+}
+
+#drawBar img, #drawBar1 img, #drawBar2 img
+{
+  position:absolute;
+  top:2px;
+  left:5px;
+}
+
+#drawBar p, #drawBar1 p, #drawBar2 p
+{
+  color:#58595b;
+  font-size:12.91pt;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  text-align:center;
+  margin:12px 0 0 0;
+}
+
+
+
+footer
+{
+  margin:0 auto;
+  width:768px;
+  padding:0 0 100px 0;
+  background:linear-gradient(to bottom, #c4c4c4, #f2f2f2);
+  background:-webkit-linear-gradient(to bottom, #c4c4c4, #f2f2f2);
+  overflow:hidden;
+}
+
+footer #drawBar2
+{
+  margin-top:1px;
+  margin-right:30px;
+}
+
+#bar
+{
+  width:714px;
+  position:absolute;
+  top:70px; left:-1000px; /*left:298px;*/
+  padding:20px;
+  background:linear-gradient(to bottom, #fffeff, #e7e9e9);
+  background:-webkit-linear-gradient(to bottom, #fffeff, #e7e9e9);
+  box-shadow:0 0 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.5);
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  overflow:hidden;
+}
+
+#bar h1
+{
+  color:#58595b;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:20.36pt;
+}
+
+#button_close
+{
+  position:absolute;
+  width:49px;
+  top:10px; right:20px;
+}
+
+p.forBox
+{
+  text-align:center;
+  margin:120px 0 15px 0;
+  color:#58595b;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12pt;
+  display:block;
+}
+
+.class
+{
+  position:absolute;
+  left:3px;
+  top:300px;
+}
+
+#GraphBar
+{
+  margin:0 0 50px 0;
+}
+
+#square
+{
+  width:25px;
+  height:25px;
+  border-radius:5px;
+  background-color:#9f518c;
+  float:left;
+  margin:0 10px 0 0;
+  box-shadow:inset 1px 1px 10px rgba(0,0,0,0.7);
+}
+
+#square1
+{
+  width:25px;
+  height:25px;
+  border-radius:5px;
+  background-color:#9aa14a;
+  float:left;
+  margin:0 10px 80px 0;
+  box-shadow:inset 1px 1px 10px rgba(0,0,0,0.7);
+}
+
+p.bottomText
+{
+  color:#58595b;
+  font-size:8pt;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+#bar1
+{
+  opacity:1;
+  width:714px;
+  position:absolute;
+  top:70px; left:-1000px; /*left:298px;*/
+  padding:20px;
+  background:linear-gradient(to bottom, #fffeff, #e7e9e9);
+  background:-webkit-linear-gradient(to bottom, #fffeff, #e7e9e9);
+  box-shadow:0 0 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.5);
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  overflow:hidden;
+  display:block;
+}
+
+#bar1 h1
+{
+  color:#58595b;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:20.36pt;
+}
+
+#drawBar_close1
+{
+  position:absolute;
+  width:49px;
+  top:10px; right:20px;
+}
+
+
+#GraphBar1
+{
+  margin:0 0 50px 0;
+}
+
+
+p.forBox1
+{
+  text-align:center;
+  margin:20px 0 15px 0;
+  color:#58595b;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12pt;
+  display:block;
+}
+
+#LineColor
+{
+  position:absolute;
+  left:220px; top:520px;
+  width:400px;
+}
+
+#oneLine1
+{
+  overflow:hidden;
+  width:80px;
+  float:left;
+}
+#oneLine2
+{
+  overflow:hidden;
+  width:80px;
+  float:left;
+}
+#oneLine3
+{
+  overflow:hidden;
+  width:80px;
+  float:right;
+    margin:-46px 0 0 0;
+}
+
+#sq1
+{
+  background-color:#9f518c;
+  border-radius:5px;
+  box-shadow:inset 1px 1px 5px rgba(0,0,0,0.4);
+  width:25px;
+  height:25px;
+  margin:0 0 20px 0;
+  float:left;
+}
+
+#oneLine3 p
+{
+  float:left;
+  margin:5px 0 0 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:10pt;
+  color:#333333;
+}
+#oneLine2 p
+{
+  float:left;
+  margin:5px 0 0 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:10pt;
+  color:#333333;
+}
+
+#oneLine1 p
+{
+  float:left;
+  margin:5px 0 0 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:10pt;
+  color:#333333;
+}
+
+
+#sq2
+{
+  background-color:#9aa14a;
+  border-radius:5px;
+  box-shadow:inset 1px 1px 5px rgba(0,0,0,0.4);
+  width:25px;
+  height:25px;
+  float:left;
+}
+
+#sq3
+{
+  background-color:#77787b;
+  border-radius:5px;
+  box-shadow:inset 1px 1px 5px rgba(0,0,0,0.4);
+  width:25px;
+  height:25px;
+  float:left;
+}
+
+
+
+#bar2
+{
+  opacity:1;
+  width:714px;
+  position:absolute;
+  top:70px; left:-1000px; /*left:298px;*/
+  padding:20px 20px 400px 20px;
+  background:linear-gradient(to bottom, #fffeff, #e7e9e9);
+  background:-webkit-linear-gradient(to bottom, #fffeff, #e7e9e9);
+  box-shadow:0 0 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.5);
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  overflow:hidden;
+  display:block;
+}
+
+#bar2 h1
+{
+  color:#58595b;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:20.36pt;
+}
+
+#bar2 p
+{
+  color:#58595b;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:9pt;
+}
+
+#bar2 h2
+{
+  color:#58595b;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12pt;
+}
+
+#main-list
+{
+  margin:250px 0 0 0;
+}
+
+#main-list ul li
+{
+  padding:0 10px;
+  margin:30px 0 0 0;
+}
+
+#main-list ul li img
+{
+  float:left;
+  margin:0 10px 0 0;
+}
+
+#text
+{
+  margin:0 0 0 35px;
+}
