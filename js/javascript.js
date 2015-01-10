@@ -520,7 +520,8 @@ drawBarFirst.onclick = function (e) {
                 for (var i = 0; i < 10; i++) {
                     if (delElement[i]) {
                         delElement[i].parentNode.removeChild(delElement[i]);
-                    };
+                    }
+                    ;
                 }
             DrawLines();
             DrawBox(arr, 30, "#9aa14a");
