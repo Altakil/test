@@ -496,6 +496,9 @@ imageCloseFirst.onclick = function (e) {
 
 }
 
+var offsetBar = document.getElementById('barFirst').offsetWidth / 2,
+    positionBarEnd = document.body.clientWidth / 2 - offsetBar;
+
 var drawBarFirst = document.getElementById("drawBarFirst");
 drawBarFirst.onclick = function (e) {
     var barFirst = document.getElementById("barFirst");
@@ -507,7 +510,7 @@ drawBarFirst.onclick = function (e) {
         barFirst.style.left = position + "px";
         barFirst.style.opacity = 1;
 
-        if (position > 298) {
+        if (position > positionBarEnd) {
             barFirst.style.left = position - 22 + "px";
             clearInterval(intervalPos);
             ctx.clearRect(0, 0, 650, 358);
@@ -540,7 +543,7 @@ drawBarSecond.onclick = function (e) {
         barSecond.style.left = position + "px";
         barSecond.style.opacity = 1;
 
-        if (position > 298) {
+        if (position > positionBarEnd) {
             barSecond.style.left = position - 22 + "px";
             clearInterval(intervalPos);
             clientWidth = 30;
@@ -564,7 +567,7 @@ drawBarThird.onclick = function (e) {
         barThree.style.left = position + "px";
         barThree.style.opacity = 1;
 
-        if (position > 298) {
+        if (position > positionBarEnd) {
             barThree.style.left = position - 22 + "px";
             clearInterval(interval);
         }
