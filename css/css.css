@@ -64,7 +64,7 @@ html
   line-height:1.4;
 }
 
-#drawBar, #drawBar1, #drawBar2
+#drawBarFirst, #drawBarSecond, #drawBarThird
 {
   background:linear-gradient(#fff, #e8eaea);
   box-shadow:0 0 10px rgba(0,0,0,0.5), inset 0 0 1px rgba(0,0,0,0.5), inset 0 0 1px rgba(0,15,255,0.5);
@@ -79,14 +79,14 @@ html
   position:relative
 }
 
-#drawBar img, #drawBar1 img, #drawBar2 img
+#drawBarFirst img, #drawBarSecond img, #drawBarThird img
 {
   position:absolute;
   top:2px;
   left:5px;
 }
 
-#drawBar p, #drawBar1 p, #drawBar2 p
+#drawBarFirst p, #drawBarSecond p, #drawBarThird p
 {
   color:#58595b;
   font-size:12.91pt;
@@ -107,7 +107,7 @@ footer
   overflow:hidden;
 }
 
-footer #drawBar2
+footer #drawBarThird
 {
   margin-top:1px;
   margin-right:30px;

@@ -538,8 +538,8 @@ var DrawText = function(obj, offset, color)
 
   }
   
-  var drawBar = document.getElementById("drawBar");
-  drawBar.onclick = function(e){
+  var drawBarFirst = document.getElementById("drawBarFirst");
+  drawBarFirst.onclick = function(e){
 	        var  bar = document.getElementById("bar");
 		    var position = -1000;
 	        var intpos = setInterval(function() {
@@ -568,9 +568,10 @@ var DrawText = function(obj, offset, color)
 										  },1);
 		   
 	  }
+
   var interval;	  
-  var drawBar1 = document.getElementById("drawBar1");
-  drawBar1.onclick = function(e){
+  var drawBarSecond = document.getElementById("drawBarSecond");
+  drawBarSecond.onclick = function(e){
 	        var  barOne = document.getElementById("bar1");
 		    var position1 = -1000;
 	        var intpos1 = setInterval(function() {
@@ -593,8 +594,8 @@ var DrawText = function(obj, offset, color)
 		   
 	  }
 	  
-  var drawBar2 = document.getElementById("drawBar2");
-  drawBar2.onclick = function(e){
+  var drawBarThird = document.getElementById("drawBarThird");
+drawBarThird.onclick = function(e){
 	        var  barThree = document.getElementById("bar2");
 		    var position2 = -1000;
 	        var intpos2 = setInterval(function() {
