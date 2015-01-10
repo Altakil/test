@@ -500,7 +500,7 @@ var drawBarFirst = document.getElementById("drawBarFirst");
 drawBarFirst.onclick = function (e) {
     var barFirst = document.getElementById("barFirst");
     var position = -1000;
-    var intpos = setInterval(function () {
+    var intervalPos = setInterval(function () {
 
         position = position + 40;
         barFirst.style.display = "block";
@@ -509,16 +509,15 @@ drawBarFirst.onclick = function (e) {
 
         if (position > 298) {
             barFirst.style.left = position - 22 + "px";
-            clearInterval(intpos);
+            clearInterval(intervalPos);
             ctx.clearRect(0, 0, 650, 358);
             yFill = 0, kol = 0;
             var delElement = document.getElementsByClassName('class');
             for (var de = 0; de < 10; de++)
-                for (var delem = 0; delem < 10; delem++) {
-                    if (delElement[delem]) {
-                        delElement[delem].parentNode.removeChild(delElement[delem]);
-                    }
-                    ;
+                for (var i = 0; i < 10; i++) {
+                    if (delElement[i]) {
+                        delElement[i].parentNode.removeChild(delElement[i]);
+                    };
                 }
             DrawLines();
             DrawBox(arr, 30, "#9aa14a");
@@ -533,17 +532,17 @@ var interval;
 var drawBarSecond = document.getElementById("drawBarSecond");
 drawBarSecond.onclick = function (e) {
     var barSecond = document.getElementById("barSecond");
-    var position1 = -1000;
-    var intpos1 = setInterval(function () {
+    var position = -1000;
+    var intervalPos = setInterval(function () {
 
-        position1 = position1 + 40;
+        position = position + 40;
         barSecond.style.display = "block";
-        barSecond.style.left = position1 + "px";
+        barSecond.style.left = position + "px";
         barSecond.style.opacity = 1;
 
-        if (position1 > 298) {
-            barSecond.style.left = position1 - 22 + "px";
-            clearInterval(intpos1);
+        if (position > 298) {
+            barSecond.style.left = position - 22 + "px";
+            clearInterval(intervalPos);
             clientWidth = 30;
             context.clearRect(0, 0, 660, 570);
             CreateAxis();
@@ -557,17 +556,17 @@ drawBarSecond.onclick = function (e) {
 var drawBarThird = document.getElementById("drawBarThird");
 drawBarThird.onclick = function (e) {
     var barThree = document.getElementById("barThird");
-    var position2 = -1000;
-    var intpos2 = setInterval(function () {
+    var position = -1000;
+    var interval = setInterval(function () {
 
-        position2 = position2 + 40;
+        position += 40;
         barThree.style.display = "block";
-        barThree.style.left = position2 + "px";
+        barThree.style.left = position + "px";
         barThree.style.opacity = 1;
 
-        if (position2 > 298) {
-            barThree.style.left = position2 - 22 + "px";
-            clearInterval(intpos2);
+        if (position > 298) {
+            barThree.style.left = position - 22 + "px";
+            clearInterval(interval);
         }
     }, 1);
     tampering();
@@ -579,13 +578,13 @@ imageCloseThird.onclick = function (e) {
 
     var barThird = document.getElementById("barThird"), op = 1;
 
-    var opacforThree = setInterval(function () {
+    var opacity = setInterval(function () {
 
         barThird.style.opacity = op;
         op = op - 0.1;
 
         if (op <= 0) {
-            clearInterval(opacforThree);
+            clearInterval(opacity);
             barThird.style.left = "-1000px";
             barThird.style.display = "none";
         }
