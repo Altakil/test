@@ -188,7 +188,7 @@ var DrawDigit = function (obj) {
         Maxceil = (Math.ceil((Maxceil / 100)) + 1) * 100;
     var middle = Math.ceil(obj.maxElement() / 3);
 
-    var parent = document.getElementById('bar');
+    var parent = document.getElementById('barFirst');
 
     for (var l = 0; l < 4; l++) {
         var div = document.createElement('div');
@@ -456,8 +456,8 @@ function DrawAdditional() {
 }
 
 
-var button1 = document.getElementById("button1");
-button1.onclick = function (e) {
+var imageCloseSecond = document.getElementById("imageCloseSecond");
+imageCloseSecond.onclick = function (e) {
 
     var barSecond = document.getElementById("barSecond"), op = 1;
 
@@ -475,8 +475,8 @@ button1.onclick = function (e) {
 
 }
 
-var button2 = document.getElementById("button2");
-button2.onclick = function (e) {
+var imageCloseFirst = document.getElementById("imageCloseFirst");
+imageCloseFirst.onclick = function (e) {
 
     var barFirst = document.getElementById("barFirst");
     var op1 = 1;
@@ -573,8 +573,8 @@ drawBarThird.onclick = function (e) {
 
 }
 
-var button_close2 = document.getElementById("button_close2");
-button_close2.onclick = function (e) {
+var imageCloseThird = document.getElementById("imageCloseThird");
+imageCloseThird.onclick = function (e) {
 
     var barThird = document.getElementById("barThird"), op = 1;
 
