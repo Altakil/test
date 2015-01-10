@@ -478,18 +478,18 @@ button1.onclick = function (e) {
 var button2 = document.getElementById("button2");
 button2.onclick = function (e) {
 
-    var bar = document.getElementById("bar");
+    var barFirst = document.getElementById("barFirst");
     var op1 = 1;
 
     var interval1 = setInterval(function () {
 
-        bar.style.opacity = op1;
+        barFirst.style.opacity = op1;
         op1 = op1 - 0.1;
 
         if (op1 <= 0) {
             clearInterval(interval1);
-            bar.style.left = "-1000px";
-            bar.style.display = "none";
+            barFirst.style.left = "-1000px";
+            barFirst.style.display = "none";
         }
     }, 100);
 
@@ -497,17 +497,17 @@ button2.onclick = function (e) {
 
 var drawBarFirst = document.getElementById("drawBarFirst");
 drawBarFirst.onclick = function (e) {
-    var bar = document.getElementById("bar");
+    var barFirst = document.getElementById("barFirst");
     var position = -1000;
     var intpos = setInterval(function () {
 
         position = position + 40;
-        bar.style.display = "block";
-        bar.style.left = position + "px";
-        bar.style.opacity = 1;
+        barFirst.style.display = "block";
+        barFirst.style.left = position + "px";
+        barFirst.style.opacity = 1;
 
         if (position > 298) {
-            bar.style.left = position - 22 + "px";
+            barFirst.style.left = position - 22 + "px";
             clearInterval(intpos);
             ctx.clearRect(0, 0, 650, 358);
             yFill = 0, kol = 0;
