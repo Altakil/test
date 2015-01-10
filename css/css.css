@@ -173,7 +173,7 @@ p.bottomText {
 
 /* ------------------------------------------------------------------------------ */
 
-#bar1 {
+#barSecond {
     opacity: 1;
     width: 714px;
     position: absolute;
@@ -190,7 +190,7 @@ p.bottomText {
     display: block;
 }
 
-#bar1 h1 {
+#barSecond h1 {
     color: #58595b;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20.36pt;
@@ -294,7 +294,7 @@ p.forBox1 {
     float: left;
 }
 
-#bar2 {
+#barThird {
     opacity: 1;
     width: 714px;
     position: absolute;
@@ -311,19 +311,19 @@ p.forBox1 {
     display: block;
 }
 
-#bar2 h1 {
+#barThird h1 {
     color: #58595b;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20.36pt;
 }
 
-#bar2 p {
+#barThird p {
     color: #58595b;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 9pt;
 }
 
-#bar2 h2 {
+#barThird h2 {
     color: #58595b;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;

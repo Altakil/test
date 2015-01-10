@@ -459,17 +459,17 @@ function DrawAdditional() {
 var button1 = document.getElementById("button1");
 button1.onclick = function (e) {
 
-    var bar1 = document.getElementById("bar1"), op = 1;
+    var barSecond = document.getElementById("barSecond"), op = 1;
 
     var interval2 = setInterval(function () {
 
-        bar1.style.opacity = op;
+        barSecond.style.opacity = op;
         op = op - 0.1;
 
         if (op <= 0) {
             clearInterval(interval2);
-            bar1.style.left = "-1000px";
-            bar1.style.display = "none";
+            barSecond.style.left = "-1000px";
+            barSecond.style.display = "none";
         }
     }, 100);
 
@@ -531,17 +531,17 @@ drawBarFirst.onclick = function (e) {
 var interval;
 var drawBarSecond = document.getElementById("drawBarSecond");
 drawBarSecond.onclick = function (e) {
-    var barOne = document.getElementById("bar1");
+    var barSecond = document.getElementById("barSecond");
     var position1 = -1000;
     var intpos1 = setInterval(function () {
 
         position1 = position1 + 40;
-        barOne.style.display = "block";
-        barOne.style.left = position1 + "px";
-        barOne.style.opacity = 1;
+        barSecond.style.display = "block";
+        barSecond.style.left = position1 + "px";
+        barSecond.style.opacity = 1;
 
         if (position1 > 298) {
-            barOne.style.left = position1 - 22 + "px";
+            barSecond.style.left = position1 - 22 + "px";
             clearInterval(intpos1);
             clientWidht = 30;
             context.clearRect(0, 0, 660, 570);
@@ -555,7 +555,7 @@ drawBarSecond.onclick = function (e) {
 
 var drawBarThird = document.getElementById("drawBarThird");
 drawBarThird.onclick = function (e) {
-    var barThree = document.getElementById("bar2");
+    var barThree = document.getElementById("barThird");
     var position2 = -1000;
     var intpos2 = setInterval(function () {
 
@@ -576,17 +576,17 @@ drawBarThird.onclick = function (e) {
 var button_close2 = document.getElementById("button_close2");
 button_close2.onclick = function (e) {
 
-    var bar2 = document.getElementById("bar2"), op = 1;
+    var barThird = document.getElementById("barThird"), op = 1;
 
     var opacforThree = setInterval(function () {
 
-        bar2.style.opacity = op;
+        barThird.style.opacity = op;
         op = op - 0.1;
 
         if (op <= 0) {
             clearInterval(opacforThree);
-            bar2.style.left = "-1000px";
-            bar2.style.display = "none";
+            barThird.style.left = "-1000px";
+            barThird.style.display = "none";
         }
     }, 100);
 
