@@ -126,7 +126,7 @@ footer #drawBarThird {
     right: 20px;
 }
 
-p.forBox {
+p.forBoxFirst {
     text-align: center;
     margin: 120px 0 15px 0;
     color: #58595b;
@@ -141,28 +141,26 @@ p.forBox {
     top: 300px;
 }
 
-#GraphBar {
+#GraphBarFirst {
     margin: 0 0 50px 0;
 }
 
-#square {
+.custom-square{
     width: 25px;
     height: 25px;
     border-radius: 5px;
-    background-color: #9f518c;
-    float: left;
-    margin: 0 10px 0 0;
     box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.7);
+    float: left;
 }
 
-#square1 {
-    width: 25px;
-    height: 25px;
-    border-radius: 5px;
+#squareFirst {
+    background-color: #9f518c;
+    margin: 0 10px 0 0;
+}
+
+#squareSecond {
     background-color: #9aa14a;
-    float: left;
     margin: 0 10px 80px 0;
-    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.7);
 }
 
 p.bottomText {
@@ -203,11 +201,11 @@ p.bottomText {
     right: 20px;
 }
 
-#GraphBar1 {
+#GraphBarSecond {
     margin: 0 0 50px 0;
 }
 
-p.forBox1 {
+p.forBoxSecond {
     text-align: center;
     margin: 20px 0 15px 0;
     color: #58595b;

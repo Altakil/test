@@ -64,7 +64,7 @@ function arrayForBar(size) {
 }
 
 
-var canvas = document.getElementById("GraphBar"),
+var canvas = document.getElementById("GraphBarFirst"),
     ctx = canvas.getContext('2d');
 canvas.width = 650;
 canvas.height = 358;
@@ -236,7 +236,7 @@ var DrawText = function (obj, offset, color) {
 
 //------------------------------------End Draw box---------------------------------------------------//
 
-var canvasGraph = document.getElementById("GraphBar1"),
+var canvasGraph = document.getElementById("GraphBarSecond"),
     context = canvasGraph.getContext('2d');
 canvasGraph.width = 660;
 canvasGraph.height = 570;
