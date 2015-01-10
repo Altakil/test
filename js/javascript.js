@@ -174,8 +174,8 @@ var DrawBox = function (obj, offset, color) {
     }
 
     var int = new Array(6);
-    for (var d = 0; d < obj.value; d++) {
-        int[d] = setInterval(Animate, 100, d, distance, offset);
+    for (var i = 0; i < obj.value; i++) {
+        int[i] = setInterval(Animate, 100, i, distance, offset);
     }
 
 }
@@ -384,15 +384,15 @@ function DrawGraph(mat, colorGraph) {
 }
 
 
-var clientWidht = 30;
+var clientWidth = 30;
 function AnimatedGraph() {
-    clientWidht = clientWidht + 4;
+    clientWidth = clientWidth + 4;
     DrawGraph(matrix, "#77787b");
     DrawGraph(matrix1, "#9e508b");
     DrawGraph(matrix2, "#99a048");
-    context.clearRect(clientWidht, 0, 660, 480);
+    context.clearRect(clientWidth, 0, 660, 480);
 
-    if (clientWidht >= 660) {
+    if (clientWidth >= 660) {
         clearInterval(interval, 1);
         context.beginPath();
         context.fillStyle = "#999999";
@@ -459,15 +459,16 @@ function DrawAdditional() {
 var imageCloseSecond = document.getElementById("imageCloseSecond");
 imageCloseSecond.onclick = function (e) {
 
-    var barSecond = document.getElementById("barSecond"), op = 1;
+    var barSecond = document.getElementById("barSecond"),
+        opacity = 1;
 
-    var interval2 = setInterval(function () {
+    var interval = setInterval(function () {
 
-        barSecond.style.opacity = op;
-        op = op - 0.1;
+        barSecond.style.opacity = opacity;
+        opacity = opacity - 0.1;
 
-        if (op <= 0) {
-            clearInterval(interval2);
+        if (opacity <= 0) {
+            clearInterval(interval);
             barSecond.style.left = "-1000px";
             barSecond.style.display = "none";
         }
@@ -479,15 +480,15 @@ var imageCloseFirst = document.getElementById("imageCloseFirst");
 imageCloseFirst.onclick = function (e) {
 
     var barFirst = document.getElementById("barFirst");
-    var op1 = 1;
+    var opacity = 1;
 
-    var interval1 = setInterval(function () {
+    var interval = setInterval(function () {
 
-        barFirst.style.opacity = op1;
-        op1 = op1 - 0.1;
+        barFirst.style.opacity = opacity;
+        opacity = opacity - 0.1;
 
-        if (op1 <= 0) {
-            clearInterval(interval1);
+        if (opacity <= 0) {
+            clearInterval(interval);
             barFirst.style.left = "-1000px";
             barFirst.style.display = "none";
         }
@@ -543,7 +544,7 @@ drawBarSecond.onclick = function (e) {
         if (position1 > 298) {
             barSecond.style.left = position1 - 22 + "px";
             clearInterval(intpos1);
-            clientWidht = 30;
+            clientWidth = 30;
             context.clearRect(0, 0, 660, 570);
             CreateAxis();
             DrawAdditional();
