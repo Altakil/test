@@ -145,7 +145,7 @@ p.forBoxFirst {
     margin: 0 0 50px 0;
 }
 
-.custom-square{
+.custom-square {
     width: 25px;
     height: 25px;
     border-radius: 5px;
@@ -221,26 +221,26 @@ p.forBoxSecond {
     width: 400px;
 }
 
-#oneLine1 {
+#LineFirst {
     overflow: hidden;
     width: 80px;
     float: left;
 }
 
-#oneLine2 {
+#LineSecond {
     overflow: hidden;
     width: 80px;
     float: left;
 }
 
-#oneLine3 {
+#LineThird {
     overflow: hidden;
     width: 80px;
     float: right;
     margin: -46px 0 0 0;
 }
 
-#sq1 {
+#nestFirst {
     background-color: #9f518c;
     border-radius: 5px;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);
@@ -250,7 +250,7 @@ p.forBoxSecond {
     float: left;
 }
 
-#oneLine3 p {
+#LineThird p {
     float: left;
     margin: 5px 0 0 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -258,7 +258,7 @@ p.forBoxSecond {
     color: #333333;
 }
 
-#oneLine2 p {
+#LineSecond p {
     float: left;
     margin: 5px 0 0 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -266,7 +266,7 @@ p.forBoxSecond {
     color: #333333;
 }
 
-#oneLine1 p {
+#LineFirst p {
     float: left;
     margin: 5px 0 0 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -274,7 +274,7 @@ p.forBoxSecond {
     color: #333333;
 }
 
-#sq2 {
+#nestSecond {
     background-color: #9aa14a;
     border-radius: 5px;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);
@@ -283,7 +283,7 @@ p.forBoxSecond {
     float: left;
 }
 
-#sq3 {
+#nestThird {
     background-color: #77787b;
     border-radius: 5px;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);
