@@ -135,7 +135,7 @@ footer #drawBarThird
   font-size:20.36pt;
 }
 
-#button_close
+.button_close
 {
   position:absolute;
   width:49px;
@@ -386,7 +386,7 @@ p.forBox1
   margin:0 10px 0 0;
 }
 
-#text
+.text
 {
   margin:0 0 0 35px;
 }
